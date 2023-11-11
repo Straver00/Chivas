@@ -1,0 +1,71 @@
+main .info {
+  width: 100%;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  & .image__container__info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    padding: 50px 10px;
+
+    & div {
+      overflow: hidden;
+      border-radius: 50px;
+    }
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  & .contianer__info {
+    width: 100%;
+    padding: 50px 10px;
+    & h2 {
+      text-align: center;
+    }
+
+    & .galleryCard {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      padding: 10px;
+
+      & .card__fecha, & .activo {
+        appearance: none;
+        border-radius: 5px;
+        border: none;
+        padding: 10px;
+        background-color: rgba(255, 77, 77, 0.6);
+      }
+
+      & .activo {
+        background-color: rgb(255, 77, 77);
+      }
+    }
+  }
+  & .count {
+    width: 100%;
+    display: none;
+
+    & p {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+
+      & span {
+        & input[type="number"] {
+          outline: none;
+        }
+      }
+    }
+  }
+}

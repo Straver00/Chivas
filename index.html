@@ -1,31 +1,68 @@
-
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Chivas</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="normalize.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li class="image__container"><a href="#"><img src="logo.png" alt="Chivas Logo"></a></li>
-                    <li><a><h1>CHIVAS</h1></a></li>
-                    <li><a class="button">Iniciar Sesión</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <p>This is some sample text.</p>
-        </main>
-        <footer>
-            <p>&copy; 2021 My Page</p>
-        </footer>
-    </body>
-</html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Chivas</title>
+    <link rel="stylesheet" href="./css/styleindex.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li class="image__container">
+            <a href="/index.html"
+              ><img src="./assets/Logo.png" alt="Chivas Logo"
+            /></a>
+          </li>
+          <li>
+            <a href="/index.html"><h1>CHIVAS</h1></a>
+          </li>
+          <li><a class="button">Iniciar Sesión</a></li>
+        </ul>
+      </nav>
+    </header>
 
+    <main>
+      <section class="container__interes">
+        <p>Encuentra los mejores viajes en chivas</p>
+      </section>
+      <section class="container__actions">
+        <div></div>
+        <div class="container">
+          <div class="container__input">
+            <input type="text" />
+            <span><img src="./assets/busqueda.svg" alt="" /></span>
+          </div>
+        </div>
+        <div class="container">
+          <p class="container__help">¿Necesitas ayuda?</p>
+        </div>
+      </section>
+      <section class="section__gallery">
+        <div class="gallery">
+          <div class="card">
+            <a href="./pages/viajes.html">
+              <img src="./assets/guatape.jpg" alt="img" />
+              <p>Guatape</p>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2021 My Page</p>
+    </footer>
+
+    <section class="modal"></section>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

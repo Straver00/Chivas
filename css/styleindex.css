@@ -1,0 +1,137 @@
+main {
+  padding: 20px;
+
+  & .container__interes {
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+    padding: 40px;
+  }
+
+  & .container__actions {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 40px;
+
+    & .container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      & .container__input {
+        width: 100%;
+        background-color: #d9d9d9;
+        border-radius: 50px;
+        overflow: hidden;
+        padding: 5px;
+        position: relative;
+
+        & input[type="text"] {
+          appearance: none;
+          border: none;
+          padding: 10px 60px 10px 20px;
+          width: 100%;
+          background-color: #d9d9d9;
+
+          &:focus {
+            outline: none;
+          }
+        }
+
+        & span {
+          position: absolute;
+          font-size: 16px;
+          transform: translate(-50px, 5px);
+          & img {
+            width: 24px;
+            height: 24px;
+            object-fit: cover;
+          }
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+
+      & .container__help {
+        margin: auto;
+        font-size: 20px;
+      }
+    }
+  }
+
+  & .section__gallery {
+    padding: 20px;
+
+    & .gallery {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+
+      & .card {
+        overflow: hidden;
+        width: 100%;
+        border-radius: 15px;
+        position: relative;
+
+        & img {
+          width: 100%;
+          height: 310px;
+          object-fit: cover;
+        }
+
+        & p {
+          position: absolute;
+          transform: translate(0, -30px);
+          background-color: rgba(0, 0, 0, 0.6);
+          color: #fff;
+          text-align: center;
+          padding: 5px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+/* footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+}
+
+/* Define the grid container
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+
+/* .item {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+} 
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+} */
